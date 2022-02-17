@@ -1,0 +1,150 @@
+.contain{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 80% 10% 10%;
+    grid-gap: 10px;
+    grid-template-areas:
+    "logo nav nav nav"
+    "contenu contenu contenu contenu" 
+    "feature feature feature feature"
+    "footer footer footer footer" ;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(156, 85, 85);
+    text-align: center;
+    background-image: url("logooo.jpg");
+    
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.content{
+    grid-area: contenu;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: auto;
+    grid-template-areas: 
+    "Presentation competences"
+    "projet Loisirs";
+    flex-wrap: wrap;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    
+    
+}
+.feature{
+    grid-area: feature;
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    padding-top: 25px;
+    
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(159, 85, 228);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top:20px ;
+}
+
+.item1{
+    grid-area: Presentation;
+    background-color: aqua;
+    height: 100%;
+    }
+.item1:hover{
+    background-color: rgb(5, 41, 41);
+    color: white;
+}
+.item2{
+    grid-area: competences;
+    background-color: blue;
+    height: 100%;
+}
+.item2:hover{
+    background-color: rgb(42, 10, 158);
+    color: white;
+}
+.item3{
+    grid-area: projet;
+    background-color: bisque;
+    height: 100%;
+}
+.item3:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+    
+.item4{
+    grid-area: Loisirs;
+    background-color: rgb(124, 196, 52);
+    height: 100%;
+}
+.item4:hover{
+    background-color: rgb(22, 77, 29);
+    color: white;
+}
+
+@media screen and (max-width : 600px){
+    .contain{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 6fr 1fr 0.5fr;
+        grid-template-areas:
+        "logo"
+        "nav"
+        "contenu"
+        "feature"
+        "footer";
+    }
+
+}
+.itemNav{
+    list-style-type: none;
+}
+li>a{
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+    justify-content: space-between;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px black solid;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(49, 31, 78);
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+a:hover{
+    color:rgb(49, 31, 78) ;
+    background-color: white;
+}
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.item1, .item2, .item3, .item4{
+    padding-left: 20px;
+}
+li{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+.rrr{
+    padding-bottom: 30px;
+}

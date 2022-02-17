@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="FichierCss.css"/>
+        <title> Portofolio</title>
+    </head>
+    <body style="margin-left: 5%;margin-right: 5%; background-color: rgb(5, 14, 68); background-attachment: fixed;">
+        <div id="Logo"><img src="Logo.jpg"></div>
+        <div id="EnTete">
+            <div class="elmt2">Accueil</div>
+            <div class="elmt3">Projet</div>
+            <div class="elmt4">Contact</div>
+        </div>
+        <div class="contenu">
+            
+        </div>
+    </body>
+</html>
